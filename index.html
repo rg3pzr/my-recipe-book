@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes for Radha - Cookbook</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styles for the index page */
+        main.index-page {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .index-header {
+            margin-bottom: 40px;
+        }
+
+        .index-header h1 {
+            font-size: 3em;
+            color: #cc0000;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .recipe-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: left;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            padding: 15px;
+        }
+
+        .recipe-card h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: #333;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .recipe-card p {
+            font-size: 0.9em;
+            color: #666;
+            margin: 0;
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 180px; /* Uniform height for card images */
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        /* Override main instructions/ingredients styles for index */
+        h1, h2 { border-bottom: none; }
+    </style>
+</head>
+<body>
+    <main class="index-page">
+        <div class="index-header">
+            <h1>The Radha Recipe Book</h1>
+            <p>A collection of 10 delicious and high-protein recipes.</p>
+        </div>
+
+        <ul class="recipe-grid">
+            <li class="recipe-card">
+                <a href="butter_chicken.html">
+                    <img src="img/butter_chicken.jpg" alt="Cream-free Guilt-free 'Butter' Chicken">
+                    <div class="card-content">
+                        <h3>1. Cream-free Guilt-free "Butter" Chicken</h3>
+                        <p>A lighter, high-protein take on the classic Indian dish.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="recipe-card">
+                <a href="honey_harissa_chicken.html">
+                    <img src="img/honey_harissa_chicken.jpg" alt="Sheet Pan Honey Harissa Chicken and Garlic Onion Rice">
+                    <div class="card-content">
+                        <h3>2. Sheet Pan Honey Harissa Chicken and Rice</h3>
+                        <p>An easy, flavorful sheet pan meal with spicy honey harissa glaze.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="recipe-card">
+                <a href="thai_basil_turkey.html">
+                    <img src="img/thai_basil_turkey.jpg" alt="Ground Turkey Thai Basil Pad Kra Pao">
+                    <div class="card-content">
+                        <h3>3. Ground Turkey Thai Basil Pad Kra Pao</h3>
+                        <p>A quick, savory, and spicy Thai-inspired stir-fry.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="recipe-card">
+                <a href="stuffed_peppers.html">
+                    <img src="img/stuffed_peppers.jpg" alt="Ground Turkey Stuffed Peppers">
+                    <div class="card-content">
+                        <h3>4. Ground Turkey Stuffed Peppers</h3>
+                        <p>Flavorful Southwestern turkey and quinoa stuffed peppers.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="recipe-card">
+                <a href="marry_me_chicken_pasta.html">
+                    <img src="img/marry_me_chicken_pasta.jpg" alt="Marry Me Chicken Pasta">
+                    <div class="card-content">
+                        <h3>5. Marry Me Chicken Pasta</h3>
+                        <p>A creamy, tomato-based pasta made lighter with Greek yogurt.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="recipe-card">
+                <a href="honey_pepper_mac_cheese.html">
+                    <img src="img/honey_pepper_mac_cheese.jpg" alt="Honey Pepper Chicken Mac and Cheese">
+                    <div class="card-content">
+                        <h3>6. Honey Pepper Chicken Mac and Cheese</h3>
+                        <p>Sweet and savory honey pepper chicken mixed with cheesy pasta.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="recipe-card">
+                <a href="southwestern_turkey_wrap.html">
+                    <img src="img/southwestern_turkey_wrap.jpg" alt="Southwestern Turkey Wrap">
+                    <div class="card-content">
+                        <h3>7. Southwestern Turkey Wrap</h3>
+                        <p>A high-protein wrap featuring cottage cheese and turkey.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="recipe-card">
+                <a href="sourdough_bagels.html">
+                    <img src="img/sourdough_bagels.jpg" alt="Sourdough Discard High Protein Bagels">
+                    <div class="card-content">
+                        <h3>8. Sourdough Discard High Protein Bagels</h3>
+                        <p>Easy, homemade bagels made with Greek yogurt and sourdough discard.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="recipe-card">
+                <a href="pistachio_creami.html">
+                    <img src="img/pistachio_creami.jpg" alt="Pistachio-Vanilla Dream Ninja Creami">
+                    <div class="card-content">
+                        <h3>9. Pistachio-Vanilla Dream Ninja Creami</h3>
+                        <p>A cold, creamy, guilt-free dessert made with a Ninja Creami.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="recipe-card">
+                <a href="maple_latte_creami.html">
+                    <img src="img/maple_latte_creami.jpg" alt="Spiced Maple Latte Ninja Creami">
+                    <div class="card-content">
+                        <h3>10. Spiced Maple Latte Ninja Creami</h3>
+                        <p>Your favorite coffee flavor transformed into a high-protein ice cream.</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; Recipes for Radha. Do not reproduce without permission.</p>
+    </footer>
+</body>
+</html>
